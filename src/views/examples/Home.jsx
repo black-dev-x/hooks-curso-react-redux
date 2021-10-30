@@ -3,7 +3,7 @@ import PageTitle from '../../components/layout/PageTitle'
 
 const Home = props => (
   <div className='Home'>
-    <PageTitle title='Módulo Hooks' subtitle='Hooks são uma nova adição ao React 16.8.' />
+    <PageTitle title='Hooks Module' subtitle='Hooks are a new addition to React 16.8' />
   </div>
 )
 

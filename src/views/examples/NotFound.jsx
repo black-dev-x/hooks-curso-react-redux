@@ -3,7 +3,7 @@ import PageTitle from '../../components/layout/PageTitle'
 
 const Home = props => (
   <div className='Home'>
-    <PageTitle error title='404' subtitle='Opss... Página Não Encontrada!' />
+    <PageTitle error title='404' subtitle='Page not found!' />
   </div>
 )
 
