@@ -18,6 +18,12 @@ const UseRef = props => {
     counter.current++
     setMergedValue(merge(value1, value2))
   }, [value1, value2])
+  useEffect(() => {
+    input1.current.focus()
+  }, [value2])
+  useEffect(() => {
+    input2.current.focus()
+  }, [value1])
   counter.current++
   return (
     <div className='UseRef'>
