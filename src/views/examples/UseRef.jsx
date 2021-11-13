@@ -5,7 +5,7 @@ import SectionTitle from '../../components/layout/SectionTitle'
 const merge = (value1, value2) => {
   if (value1.length === 0) return value2
   if (value2.length === 0) return value1
-  return value1.substring(0, 1) + value2.substring(0, 1) + merge(value1.substring(1), value2.substring(1))
+  return value1[0] + value2[0] + merge(value1.substring(1), value2.substring(1))
 }
 const UseRef = props => {
   const [mergedValue, setMergedValue] = useState('')
@@ -24,7 +24,6 @@ const UseRef = props => {
   useEffect(() => {
     input2.current.focus()
   }, [value1])
-  counter.current++
   return (
     <div className='UseRef'>
       <PageTitle title='Hook UseRef' subtitle='Returns a mutable object with the .current property!' />
